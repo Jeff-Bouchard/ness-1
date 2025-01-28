@@ -1250,7 +1250,7 @@ func checkBroadcastTxnRecipients(connections *Connections, ids []uint64, txn coi
 			if err := verifyUserTxnAgainstPeer(txn, head, inputs, params.VerifyTxn{
 				BurnFactor:          2,
 				MaxTransactionSize:  32 * 1024,
-				MaxDropletPrecision: 3,
+				MaxDropletPrecision: 6,
 			}); err != nil {
 				logger.WithFields(logrus.Fields{
 					"addr":   c.Addr,
