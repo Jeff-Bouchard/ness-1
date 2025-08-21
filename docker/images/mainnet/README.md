@@ -25,7 +25,7 @@ to the branch, a tag or a commit you specify on that variable.
 Example
 
 ```sh
-$ git clone https://github.com/skycoin/skycoin
+$ git clone https://github.com/ness-network/ness
 $ cd skycoin
 $ SKYCOIN_VERSION=v0.24.0
 $ docker build -f docker/images/mainnet/Dockerfile \
@@ -49,7 +49,7 @@ architecture.
 Example for ARMv5.
 
 ```sh
-$ git clone https://github.com/skycoin/skycoin
+$ git clone https://github.com/ness-network/ness
 $ cd skycoin
 $ docker build -f docker/images/mainnet/Dockerfile \
   --build-arg=ARCH=arm \
